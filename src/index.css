@@ -1,0 +1,235 @@
+/* FONTS */
+
+@font-face {
+  font-family: "LaPointes";
+  src: url("./LaPointesRoad.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("./MedievalSharp-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* LEGACY SETTINGS */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #6B2737;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "LaPointes";
+  font-size: 3.7em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: "Playfair";
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin: 30px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+  color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* TOP OF THE LANDING */
+
+.headerBlock {
+  margin-top: 300px;
+}
+
+.headerSubtitle {
+  margin-top: 50px;
+  font-family: "LaPointes";
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: lightpink;
+}
+
+/* BLOCK WITH BUTTONS */
+
+.navBlock {
+  margin-top: 200%;
+}
+
+.navButtons {
+  margin: 50px;
+  margin-bottom: 200px;
+}
+
+.navButtons button {
+  font-family: "Playfair";
+}
+
+/* THE GAME */
+
+.sectionContent {
+  display: grid;
+  grid-template-columns: 500px 5fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.sectionImage img {
+  width: 100%;
+  height: auto;
+}
+
+.sectionText {
+  padding: 20px;
+  font-family: "Playfair";
+}
+
+.sectionText h3 {
+  color: #E8985E;
+}
+
+.sectionText h4 {
+  color: #A0EADE;
+}
+
+.sectionText ul {
+  text-align: left;
+}
+
+li + li {
+  margin-top: 10px; /* Adjust the value as needed */
+}
+
+.highlight {
+  color: #FE64A3;
+}
+
+.returnButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.returnButton button {
+  font-family: "Playfair";
+}
+
+/* INDEX: RESPONSIVE */
+
+@media (max-width:860px) {
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 100px;  
+  }
+  button {
+    padding: 30px;
+    font-size: 200%;
+  }
+}
+
+@media (max-width:660px) {
+  .headerBlock, .navTitle {
+    font-size: 75%;
+  }
+}
+
+@media (max-width:500px) {
+  .headerBlock h1, .navTitle h1 {
+    line-height: 2em;
+  }
+}
+
+/* CONTENT: RESPONSIVE */
+
+@media (max-width:900px) {
+  .sectionContent {
+    display: grid;
+    grid-template-columns: 350px 5fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width:750px) {
+  .sectionContent {
+    display: grid;
+    grid-template-columns: 200px 5fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  .sectionText {
+    padding: 7px;
+  }
+  
+}
+
+@media (max-width:550px) {
+  .sectionContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    gap: 30px;
+  }
+    
+  .sectionImage img {
+    width: auto;
+    height: 100%;
+  }
+}
