@@ -36,7 +36,7 @@ function SchoolPage() {
                         <li>You are in the final year of study at the Soleira Prestigia, which means that now it is your job to show the world the true power of Agrestia! Can you fulfill the hopes that lie on you?</li>
                     </ul>
                     <div className="returnButton">
-                        <Link to="/">
+                        <Link to="/c5-new/">
                             <button>Return</button>
                         </Link>
                     </div>

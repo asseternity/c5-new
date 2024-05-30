@@ -6,23 +6,23 @@ import CharPage from './CharPage.jsx';
 
 const myNewRoutes = [
     {
-      path: "/",
+      path: "/c5-new/",
       element: <App />,
     },
     {
-      path: "/landing",
+      path: "/c5-new/landing",
       element: <GamePage />,
     },
     {
-      path: "/lore",
+      path: "/c5-new/lore",
       element: <LorePage />,
     },
     {
-      path: "/school",
+      path: "/c5-new/school",
       element: <SchoolPage />,
     },
     {
-      path: "/char",
+      path: "/c5-new/char",
       element: <CharPage />,
     },
   ];

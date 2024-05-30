@@ -43,7 +43,7 @@ function CharPage() {
                     <li>If you have any questions about Agrestia, where you could be from or if you need help with mechanics - please message me.</li>
                     </ul>
                     <div className="returnButton">
-                        <Link to="/">
+                        <Link to="/c5-new/">
                             <button>Return</button>
                         </Link>
                     </div>

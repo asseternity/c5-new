@@ -93,7 +93,7 @@ function LorePage() {
                         <li>However, espionage manipulations by foreign powers about 100 years ago have changed that - now the Director is no longer appointed by the Ring of Eagles, but elected for five years by <span className="highlight">a nationwide election</span>.</li>
                     </ul>
                     <div className="returnButton">
-                        <Link to="/">
+                        <Link to="/c5-new/">
                             <button>Return</button>
                         </Link>
                     </div>

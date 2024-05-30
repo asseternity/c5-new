@@ -36,7 +36,7 @@ function GamePage() {
                         <li>Please let me know if there are any topics that you do not wish to be portrayed in the game. For example, are you comfortable with other characters / players flirting or romancing your character?</li>
                     </ul>
                     <div className="returnButton">
-                        <Link to="/">
+                        <Link to="/c5-new/">
                             <button>Return</button>
                         </Link>
                     </div>
