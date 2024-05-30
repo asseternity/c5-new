@@ -2,6 +2,7 @@
   "name": "c5new",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://asseternity.github.io/c5-new/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/asseternity/c5-new",
     "clean": "rm -rf dist"
   },
   "dependencies": {
