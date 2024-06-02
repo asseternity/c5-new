@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './index.css';
@@ -7,6 +7,8 @@ function App() {
   useEffect(() => {
     document.body.style.backgroundImage = "none";
   }, []);
+
+  const blockRef = useRef(null);
 
   return (
       <motion.div 
@@ -20,10 +22,17 @@ function App() {
           <h1>Welcome to Campaign&nbsp;5</h1>
         </div>
         <div className="headerSubtitle">
-          <p>(scroll down)</p>
+          <button
+            onClick={() => {
+              blockRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              })
+            }}
+          >scroll down</button>
         </div>
         <div className="navBlock">
-          <div className="navTitle">
+          <div className="navTitle" ref={blockRef}>
             <h1>Choose your destination</h1>
           </div>
           <div className="navButtons">
