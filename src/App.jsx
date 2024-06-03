@@ -48,6 +48,22 @@ function App() {
             <Link to="char">
               <button>Your Character</button>
             </Link>
+            <div className="newButton">
+              <Link>
+                <button>Unlock Your Destiny</button>
+              </Link>
+              <div className="hiddenButtons">
+                <Link>
+                  <button className="hiddenButton1">Popularity</button>
+                </Link>
+                <Link>
+                  <button className="hiddenButton2">Team</button>
+                </Link>
+                <Link>
+                  <button className="hiddenButton3">Towns</button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

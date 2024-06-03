@@ -168,6 +168,26 @@ li + li {
   font-family: "Playfair";
 }
 
+/* NEW BUTTONS SECTION */
+
+.hiddenButtons {
+}
+
+.hiddenButton1 {
+  transition: transform 0.5s ease-out 0.2s;
+  transform: translateY(-250%) translateX(100%);
+}
+
+.hiddenButton2 {
+  transition: transform 0.5s ease-out 0.2s;
+  transform: translateY(-250%);
+}
+
+.hiddenButton3 {
+  transition: transform 0.5s ease-out 0.2s;
+  transform: translateY(-250%) translateX(-100%);
+}
+
 /* INDEX: RESPONSIVE */
 
 @media (max-width:860px) {
