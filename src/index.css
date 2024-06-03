@@ -1,15 +1,15 @@
 /* FONTS */
 
 @font-face {
-  font-family: "LaPointes";
-  src: url("./LaPointesRoad.ttf") format("truetype");
+  font-family: 'LaPointes';
+  src: url('./LaPointesRoad.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Playfair";
-  src: url("./MedievalSharp-Regular.ttf") format("truetype");
+  font-family: 'Playfair';
+  src: url('./MedievalSharp-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -29,7 +29,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #6B2737;
+  background-color: #6b2737;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -50,13 +50,13 @@ body {
 }
 
 h1 {
-  font-family: "LaPointes";
+  font-family: 'LaPointes';
   font-size: 3.7em;
   line-height: 1.1;
 }
 
 button {
-  font-family: "Playfair";
+  font-family: 'Playfair';
   border-radius: 8px;
   border: 1px solid transparent;
   margin: 30px;
@@ -98,7 +98,7 @@ button:focus-visible {
 
 .headerSubtitle {
   margin-top: 50px;
-  font-family: "LaPointes";
+  font-family: 'LaPointes';
   font-size: 1.5em;
   line-height: 1.1;
   color: lightpink;
@@ -116,7 +116,7 @@ button:focus-visible {
 }
 
 .navButtons button {
-  font-family: "Playfair";
+  font-family: 'Playfair';
 }
 
 /* THE GAME */
@@ -135,15 +135,15 @@ button:focus-visible {
 
 .sectionText {
   padding: 20px;
-  font-family: "Playfair";
+  font-family: 'Playfair';
 }
 
 .sectionText h3 {
-  color: #E8985E;
+  color: #e8985e;
 }
 
 .sectionText h4 {
-  color: #A0EADE;
+  color: #a0eade;
 }
 
 .sectionText ul {
@@ -155,7 +155,7 @@ li + li {
 }
 
 .highlight {
-  color: #FE64A3;
+  color: #fe64a3;
 }
 
 .returnButton {
@@ -165,7 +165,7 @@ li + li {
 }
 
 .returnButton button {
-  font-family: "Playfair";
+  font-family: 'Playfair';
 }
 
 /* NEW BUTTONS SECTION */
@@ -190,12 +190,12 @@ li + li {
 
 /* INDEX: RESPONSIVE */
 
-@media (max-width:860px) {
+@media (max-width: 860px) {
   .navButtons {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    margin-bottom: 100px;  
+    margin-bottom: 100px;
   }
   button {
     padding: 30px;
@@ -203,21 +203,23 @@ li + li {
   }
 }
 
-@media (max-width:660px) {
-  .headerBlock, .navTitle {
+@media (max-width: 660px) {
+  .headerBlock,
+  .navTitle {
     font-size: 75%;
   }
 }
 
-@media (max-width:500px) {
-  .headerBlock h1, .navTitle h1 {
+@media (max-width: 500px) {
+  .headerBlock h1,
+  .navTitle h1 {
     line-height: 2em;
   }
 }
 
 /* CONTENT: RESPONSIVE */
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .sectionContent {
     display: grid;
     grid-template-columns: 350px 5fr;
@@ -226,7 +228,7 @@ li + li {
   }
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .sectionContent {
     display: grid;
     grid-template-columns: 200px 5fr;
@@ -237,17 +239,16 @@ li + li {
   .sectionText {
     padding: 7px;
   }
-  
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .sectionContent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
     gap: 30px;
   }
-    
+
   .sectionImage img {
     width: auto;
     height: 100%;
