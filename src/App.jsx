@@ -1,9 +1,47 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './index.css';
 
 function App() {
+  let b1_oldStyle = {
+    transition: 'transform 0.5s ease-out 0.2s',
+    transform: 'translateY(-250%) translateX(100%)',
+  };
+  let b2_oldStyle = {
+    transition: 'transform 0.5s ease-out 0.2s',
+    transform: 'translateY(-250%)',
+  };
+  let b3_oldStyle = {
+    transition: 'transform 0.5s ease-out 0.2s',
+    transform: 'translateY(-250%) translateX(-100%)',
+  };
+
+  const [button1style, setButton1] = useState(b1_oldStyle);
+  const [button2style, setButton2] = useState(b2_oldStyle);
+  const [button3style, setButton3] = useState(b3_oldStyle);
+
+  function handleButtons() {
+    let b1_newStyle = {
+      transition: 'transform 0.5s ease-out 0.2s',
+      transform: 'translateY(0%) translateX(0%)',
+      color: 'red',
+    };
+    setButton1(b1_newStyle);
+    let b2_newStyle = {
+      transition: 'transform 0.5s ease-out 0.2s',
+      transform: 'translateY(0%) translateX(0%)',
+      color: 'red',
+    };
+    setButton2(b2_newStyle);
+    let b3_newStyle = {
+      transition: 'transform 0.5s ease-out 0.2s',
+      transform: 'translateY(0%) translateX(0%)',
+      color: 'red',
+    };
+    setButton3(b3_newStyle);
+  }
+
   useEffect(() => {
     document.body.style.backgroundImage = 'none';
   }, []);
@@ -52,17 +90,25 @@ function App() {
           </Link>
           <div className="newButton">
             <Link>
-              <button>Unlock Your Destiny</button>
+              <button className="unlockButton" onClick={handleButtons}>
+                Unlock Your Destiny
+              </button>
             </Link>
             <div className="hiddenButtons">
               <Link>
-                <button className="hiddenButton1">Popularity</button>
+                <button className="hiddenButton1" style={button1style}>
+                  Popularity
+                </button>
               </Link>
               <Link>
-                <button className="hiddenButton2">Team</button>
+                <button className="hiddenButton2" style={button2style}>
+                  Team
+                </button>
               </Link>
               <Link>
-                <button className="hiddenButton3">Towns</button>
+                <button className="hiddenButton3" style={button3style}>
+                  Towns
+                </button>
               </Link>
             </div>
           </div>
