@@ -170,22 +170,61 @@ li + li {
 
 /* NEW BUTTONS SECTION */
 
-.hiddenButtons {
-}
-
 .hiddenButton1 {
-  transition: transform 0.5s ease-out 0.2s;
+  transition: transform 0.5s ease-in 0.2s;
+  transition: opacity 0.5s ease-in 0.3s;
   transform: translateY(-250%) translateX(100%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hiddenButton2 {
-  transition: transform 0.5s ease-out 0.2s;
+  transition: transform 0.5s ease-in 0.2s;
+  transition: opacity 0.5s ease-in 0.2s;
   transform: translateY(-250%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hiddenButton3 {
-  transition: transform 0.5s ease-out 0.2s;
+  transition: transform 0.5s ease-in 0.2s;
+  transition: opacity 0.5s ease-in 0.2s;
   transform: translateY(-250%) translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* UNLOCK BUTTON */
+
+.unlockButton {
+  font-size: 120%;
+  animation: unlockColors 1s ease 0.5s infinite alternate;
+  transition: opacity 1s ease-out 0.1s;
+}
+
+@keyframes unlockColors {
+  from {
+    background-color: #646cff;
+  }
+  to {
+    background-color: #213547;
+  }
+}
+
+/* MODAL */
+
+.modalContainer {
+  position: fixed;
+  top: 50%; /* Adjust this value to position the box vertically */
+  left: 50%; /* Adjust this value to position the box horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the box by half of its own dimensions */
+  background-color: #213547; /* Set the background color of the box */
+  border: 2px solid black; /* Add a border to the box */
+  padding: 10px; /* Add padding inside the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
 }
 
 /* INDEX: RESPONSIVE */
