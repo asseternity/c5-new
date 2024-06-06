@@ -221,10 +221,45 @@ li + li {
     -50%,
     -50%
   ); /* Offset the box by half of its own dimensions */
-  background-color: #213547; /* Set the background color of the box */
-  border: 2px solid black; /* Add a border to the box */
+  background-color: black; /* Set the background color of the box */
+  border: 2px solid #e8985e; /* Add a border to the box */
   padding: 10px; /* Add padding inside the box */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+}
+
+.modal button {
+  margin: 0;
+  padding: 2px 8px;
+}
+
+.modalContent_container h2 {
+  font-family: 'LaPointes';
+  color: #e8985e;
+}
+
+.modalContent_container {
+  font-family: 'Playfair';
+  color: #e8985e;
+}
+
+.modalContent_rowContainer {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-columns: 800px;
+  gap: 10px;
+}
+
+.modalContent_row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 7fr 10fr;
+  grid-template-columns: 1;
+  gap: 5px;
+}
+
+.box {
+  border: 2px solid #e8985e;
+  border-radius: 5px;
+  background-color: #213547;
 }
 
 /* INDEX: RESPONSIVE */

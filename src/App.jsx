@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Popularity from './modalContents/Popularity';
+import Teams from './modalContents/Teams';
+import Towns from './modalContents/Towns';
 import './index.css';
 
 function Panel({ children, updateActiveModalIndex }) {
@@ -13,9 +16,9 @@ function Panel({ children, updateActiveModalIndex }) {
 }
 
 function Modal({ activeModalIndex, updateActiveModalIndex }) {
-  const popularity = <div>Popularity</div>;
-  const towns = <div>Towns</div>;
-  const teams = <div>Teams</div>;
+  const popularity = <Popularity />;
+  const towns = <Towns />;
+  const teams = <Teams />;
 
   let hiddenStyle;
 
