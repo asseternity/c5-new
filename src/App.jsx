@@ -9,7 +9,9 @@ import './index.css';
 function Panel({ children, updateActiveModalIndex }) {
   return (
     <div className="modal">
-      <button onClick={() => updateActiveModalIndex(0)}>x</button>
+      <div className="closeButtonDiv">
+        <button onClick={() => updateActiveModalIndex(0)}>x</button>
+      </div>
       {children}
     </div>
   );
@@ -174,7 +176,6 @@ function App() {
         activeModalIndex={activeModalIndex}
         updateActiveModalIndex={setActiveModalIndex}
       />
-      ;
     </motion.div>
   );
 }

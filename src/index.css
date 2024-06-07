@@ -262,6 +262,12 @@ li + li {
   background-color: #213547;
 }
 
+.closeButtonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 /* INDEX: RESPONSIVE */
 
 @media (max-width: 860px) {
@@ -271,7 +277,8 @@ li + li {
     margin: 20px;
     margin-bottom: 100px;
   }
-  button {
+
+  .navBlock button {
     padding: 30px;
     font-size: 200%;
   }
@@ -313,6 +320,11 @@ li + li {
   .sectionText {
     padding: 7px;
   }
+
+  .hiddenButtons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 550px) {
@@ -326,5 +338,20 @@ li + li {
   .sectionImage img {
     width: auto;
     height: 100%;
+  }
+}
+
+/* MODALS - RESPONSIVE */
+@media (max-width: 850px) {
+  .modalContainer {
+    height: 90vh;
+    overflow: scroll;
+    font-size: 180%;
+  }
+  .modalContent_rowContainer {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: 90vw;
+    gap: 10px;
   }
 }
