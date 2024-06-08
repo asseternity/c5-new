@@ -31,7 +31,10 @@ function Modal({ activeModalIndex, updateActiveModalIndex }) {
   }
 
   return (
-    <div className="modalContainer" style={hiddenStyle}>
+    <div
+      className="modalContainer bg-gray-700 rounded-lg shadow-lg dark:bg-gray-800 p-2"
+      style={hiddenStyle}
+    >
       {activeModalIndex == 0 ? null : activeModalIndex == 1 ? (
         <Panel updateActiveModalIndex={updateActiveModalIndex}>
           {popularity}
