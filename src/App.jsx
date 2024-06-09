@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import Popularity from './modalContents/Popularity';
 import Teams from './modalContents/Teams';
 import Towns from './modalContents/Towns';
-import './index.css';
+// import './index.css';
+import './onlyTW.css';
 
 function Panel({ children, updateActiveModalIndex }) {
   return (
