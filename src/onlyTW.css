@@ -8,3 +8,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('./MedievalSharp-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar img {
+  height: 30px;
+}
+
+.progressButton {
+  color: #ffbf00;
+}

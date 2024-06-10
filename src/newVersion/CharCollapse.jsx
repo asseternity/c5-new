@@ -6,7 +6,7 @@ import progress from './assets/movie-emoji-smiley-svgrepo-com.svg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-export default function LoreCollapse() {
+export default function CharCollapse() {
   return (
     <motion.div
       className="gameBlock"
@@ -68,7 +68,7 @@ export default function LoreCollapse() {
       >
         <div className="flex flex-col items-center mx-5 my-10">
           <h1 className="text-4xl my-10" style={{ fontFamily: 'LaPointes' }}>
-            The Lore
+            The Character
           </h1>
           <div className="collapse collapse-arrow bg-base-200 my-3 mx-5">
             <input type="radio" name="my-accordion-2" defaultChecked />

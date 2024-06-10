@@ -8,7 +8,7 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ['luxury'],
+    themes: ['night'],
     themeRoot: ':root',
   },
 };

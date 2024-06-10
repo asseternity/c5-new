@@ -7,6 +7,8 @@ import Test from './tabMenu/Test.jsx';
 import Root from './newVersion/Root.jsx';
 import GameCollapse from './newVersion/GameCollapse.jsx';
 import LoreCollapse from './newVersion/LoreCollapse.jsx';
+import SchoolCollapse from './newVersion/SchoolCollapse.jsx';
+import CharCollapse from './newVersion/CharCollapse.jsx';
 
 const myNewRoutes = [
   {
@@ -44,6 +46,14 @@ const myNewRoutes = [
   {
     path: '/c5-new/lc',
     element: <LoreCollapse />,
+  },
+  {
+    path: '/c5-new/sc',
+    element: <SchoolCollapse />,
+  },
+  {
+    path: '/c5-new/cc',
+    element: <CharCollapse />,
   },
 ];
 
