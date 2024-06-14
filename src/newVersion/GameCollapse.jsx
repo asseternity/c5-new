@@ -1,67 +1,14 @@
-import student from './assets/emojies-emoji-smiley-svgrepo-com.svg';
-import castle from './assets/nerd-emoji-smiley-svgrepo-com.svg';
-import space from './assets/angel-emoji-smiley-svgrepo-com.svg';
-import sword from './assets/viking-emoji-smiley-svgrepo-com.svg';
-import progress from './assets/movie-emoji-smiley-svgrepo-com.svg';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function GameCollapse() {
   return (
     <motion.div
       className="gameBlock"
-      initial={{ opacity: 0 }} // Initial position off-screen to the left
-      animate={{ opacity: 1 }} // Animate to opacity 1 and position 0 (sliding in from left)
-      exit={{ opacity: 1 }} // Animate to opacity 0 and position off-screen to the right (sliding out to right)
+      initial={{ transform: 'translate(-100%)' }} // Initial position off-screen to the left
+      animate={{ transform: 'translate(0%)' }} // Animate to opacity 1 and position 0 (sliding in from left)
+      exit={{ transform: 'translate(100%)' }} // Animate to opacity 0 and position off-screen to the right (sliding out to right)
       transition={{ duration: 0.5 }}
     >
-      <div>
-        <div
-          className="navbar flex flex-row justify-center items-center"
-          style={{ fontFamily: 'Playfair' }}
-        >
-          <div className="flex-none">
-            <Link to="/c5-new/gc">
-              <div className="flex flex-col justify-center items-center px-1">
-                <button className="btn btn-square btn-ghost">
-                  <img src={sword} />
-                </button>
-                Game
-              </div>
-            </Link>
-            <Link to="/c5-new/lc">
-              <div className="flex flex-col justify-center items-center px-1">
-                <button className="btn btn-square btn-ghost">
-                  <img src={space} />
-                </button>
-                Lore
-              </div>
-            </Link>
-            <Link to="/c5-new/sc">
-              <div className="flex flex-col justify-center items-center px-1">
-                <button className="btn btn-square btn-ghost">
-                  <img src={castle} />
-                </button>
-                School
-              </div>
-            </Link>
-            <Link to="/c5-new/cc">
-              <div className="flex flex-col justify-center items-center px-1">
-                <button className="btn btn-square btn-ghost">
-                  <img src={student} />
-                </button>
-                Char
-              </div>
-            </Link>
-            <div className="flex flex-col justify-center items-center px-1 progressButton">
-              <button className="btn btn-square btn-ghost">
-                <img src={progress} />
-              </button>
-              Progress
-            </div>
-          </div>
-        </div>
-      </div>
       <div
         className="flex flex-col min-h-screen"
         style={{ fontFamily: 'Playfair' }}
@@ -105,48 +52,6 @@ export default function GameCollapse() {
               <p>
                 Safety is the most important thing. No homophobia, misogyny,
                 racism - even as a joke.
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 my-3 mx-5">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              No-no topics
-            </div>
-            <div className="collapse-content">
-              <p>
-                Please let me know if there are any topics that you do not wish
-                to be portrayed in the game. For example, are you comfortable
-                with other characters / players flirting or romancing your
-                character?
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 my-3 mx-5">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              No-no topics
-            </div>
-            <div className="collapse-content">
-              <p>
-                Please let me know if there are any topics that you do not wish
-                to be portrayed in the game. For example, are you comfortable
-                with other characters / players flirting or romancing your
-                character?
-              </p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200 my-3 mx-5">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              No-no topics
-            </div>
-            <div className="collapse-content">
-              <p>
-                Please let me know if there are any topics that you do not wish
-                to be portrayed in the game. For example, are you comfortable
-                with other characters / players flirting or romancing your
-                character?
               </p>
             </div>
           </div>

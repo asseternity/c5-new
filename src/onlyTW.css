@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+:root {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'LaPointes';
   src: url('./LaPointesRoad.ttf') format('truetype');
@@ -21,5 +27,16 @@
 }
 
 .progressButton {
+  color: #ffbf00;
+}
+
+.highlight {
+  color: #fe64a3;
+}
+
+h4 {
+  font-size: 150%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #ffbf00;
 }
