@@ -13,7 +13,7 @@ import CharCollapse from './newVersion/CharCollapse.jsx';
 const myNewRoutes = [
   {
     path: '/c5-new/',
-    element: <App />,
+    element: <Root />,
   },
   {
     path: '/c5-new/landing',

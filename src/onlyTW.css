@@ -40,3 +40,13 @@ h4 {
   margin-bottom: 5px;
   color: #ffbf00;
 }
+
+.popTable img {
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 6px;
+}
+
+.townCard img {
+  object-fit: cover;
+}
