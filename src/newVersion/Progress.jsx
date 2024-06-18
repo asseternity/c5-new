@@ -91,7 +91,7 @@ export default function Progress() {
                   </tr>
                   {/* row 2 */}
                   <tr>
-                    <th>3</th>
+                    <th>2</th>
                     <td>Hurricane</td>
                     <td className="flex justify-center items-center">
                       <img src={l6} />
@@ -100,7 +100,7 @@ export default function Progress() {
                   </tr>
                   {/* row 3 */}
                   <tr>
-                    <th>2</th>
+                    <th>3</th>
                     <td>Aria Coldsun</td>
                     <td className="flex justify-center items-center">
                       <img src={l2} />
@@ -136,7 +136,7 @@ export default function Progress() {
                   </tr>
                   {/* row 7 */}
                   <tr>
-                    <th>8</th>
+                    <th>7</th>
                     <td>Devil Spawn Misk Gordan</td>
                     <td className="flex justify-center items-center">
                       <img src={l17} />
@@ -145,7 +145,7 @@ export default function Progress() {
                   </tr>
                   {/* row 8 */}
                   <tr>
-                    <th>7</th>
+                    <th>8</th>
                     <td>The Dragonfly</td>
                     <td className="flex justify-center items-center">
                       <img src={l15} />
